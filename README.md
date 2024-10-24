@@ -37,10 +37,19 @@ To quantitavely validate and compare the reconstruction results of fw EM and dyn
 ## Contact
 
 You can contact the authors under:
-Nils Marquardt, n.marquardt@uni-muenster.de
-Tobais Hengsbach, thengsba@uni-muenster.de
-Klaus P. Schäfers, schafkl@uni-muenster.de
+
 [European Institute for Molecular Imaging](https://www.uni-muenster.de/EIMI/), University of Münster, Röntgenstraße 16, 48149 Münster, Germany
-Marco Mauritz, marco.mauritz@uni-muenster.de
-Benedikt Wirth, benedikt.wirth@uni-muenster.de
+
+Nils Marquardt, n.marquardt@uni-muenster.de
+
+Tobias Hengsbach, thengsba@uni-muenster.de
+
+Klaus P. Schäfers, schafkl@uni-muenster.de
+
 [Institute for Computational and Applied Mathematics](https://www.uni-muenster.de/AMM/en/), University of Münster, Orléans-Ring 10, 48149 Münster, Germany
+
+Marco Mauritz, marco.mauritz@uni-muenster.de
+
+Benedikt Wirth, benedikt.wirth@uni-muenster.de
+
+
