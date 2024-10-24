@@ -8,7 +8,7 @@ An animated video of this simulation can be watched and downloaded [here](https:
 
 ## PET simulation
 
-The simulated cell paths serve as input for moving sources in GATE. Each cell is simulated as a sphere of 1µm diameter with 10kBq of activity. To create PET data, the total-body scanner [Siemens Biograph Vision Quadra](https://jnm.snmjournals.org/content/63/3/476.abstract) (Siemens Healthineers) is implemented as well as the [XCAT phantom](https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3480985) for attenuation and scatter effects. The background created by the radioactive Lu-176 in the LSO crystals of the scanner can also be simulated. For the reconstruction algorithms, the resulting root files of the GATE simulation are transformed into listmode files. The placement files of the cells for the GATE simulation, the root files and the listmode files for simulations of 10 cells and 100 cells with and without background can be found [here](https://uni-muenster.sciebo.de/s/XErqaLyqTgPbO7I).
+The simulated cell paths serve as input for moving sources in GATE. Each cell is simulated as a sphere of 1µm diameter with 10kBq of activity. To create PET data, the total-body scanner [Siemens Biograph Vision Quadra](https://jnm.snmjournals.org/content/63/3/476.abstract) (Siemens Healthineers) is implemented as well as the [XCAT phantom](https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3480985) for attenuation and scatter effects. The background created by the radioactive Lu-176 in the LSO crystals of the scanner can also be simulated. For the reconstruction algorithms, the resulting root files of the GATE simulation are transformed into listmode files. The placement files of the cells for the GATE simulation, the root files and the listmode files for simulations of 10 cells without background, as well as simulations with background and with 100 cells can be found [here](https://uni-muenster.sciebo.de/s/XErqaLyqTgPbO7I).
 
 ## Reconstructions
 
@@ -18,6 +18,29 @@ The generated listmode data is subsampled to only account for 20%, 5% and 1% of 
 <img src="recons_for_5percent.gif" alt="recons_for_5percent" width="400" />
 <img src="recons_for_1percent.gif" alt="recons_for_1percent" width="400" />
 
+To quantitavely validate and compare the reconstruction results of fw EM and dyn opt, their differences to the ground truth is calculated using the method described by [Chizat et al. (2018)](https://link.springer.com/article/10.1007/s10208-016-9331-y). For this means, a maximum distance must be defined how far a cell can be transported during a time frame. The positional errors are calculated for three different maximum transport differences of 2, 5 and 10 pixel diameters (1 pixel diameter = 5.8mm). 
 
 <img src="comparison_recons_numberofevents.gif" alt="recons_for_1percent" width="800" />
 
+| % of coincidences used | maximum transport in px diameter | Error fw EM in mm | Error dyn opt in mm |
+| --- | --- | --- | --- |
+| 20 | 2 | 7.9 | 6.6 |
+| 20 | 5 | 18.7 | 15.5 |
+| 20 | 10 | 35.3 | 30.4 |
+| 5 | 2 | 8.7 | 8.0 |
+| 5 | 5 | 20.2 | 17.1 |
+| 5 | 10 | 38.0 | 32.0 |
+| 1 | 2 | 10.3 | 9.0 |
+| 1 | 5 | 24.8 | 18.7 |
+| 1 | 10 | 46.7 | 33.6 |
+
+## Contact
+
+You can contact the authors under:
+Nils Marquardt, n.marquardt@uni-muenster.de
+Tobais Hengsbach, thengsba@uni-muenster.de
+Klaus P. Schäfers, schafkl@uni-muenster.de
+[European Institute for Molecular Imaging](https://www.uni-muenster.de/EIMI/), University of Münster, Röntgenstraße 16, 48149 Münster, Germany
+Marco Mauritz, marco.mauritz@uni-muenster.de
+Benedikt Wirth, benedikt.wirth@uni-muenster.de
+[Institute for Computational and Applied Mathematics](https://www.uni-muenster.de/AMM/en/), University of Münster, Orléans-Ring 10, 48149 Münster, Germany
