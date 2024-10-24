@@ -6,7 +6,13 @@ An animated video of this simulation can be watched and downloaded [here](https:
 
 <img src="10cells_from_109-120s.gif" alt="10cells_from_109-120s" width="400" />
 
+## PET simulation
+
+The simulated cell paths serve as input for moving sources in GATE. Each cell is simulated as a sphere of 1µm diameter with 10kBq of activity. To create PET data, the total-body scanner [Siemens Biograph Vision Quadra](https://jnm.snmjournals.org/content/63/3/476.abstract) (Siemens Healthineers) is implemented as well as the [XCAT phantom](https://aapm.onlinelibrary.wiley.com/doi/full/10.1118/1.3480985) for attenuation and scatter effects. The background created by the radioactive Lu-176 in the LSO crystals of the scanner can also be simulated. For the reconstruction algorithms, the resulting root files of the GATE simulation are transformed into listmode files. The placement files of the cells for the GATE simulation, the root files and the listmode files for simulations of 10 cells and 100 cells with and without background can be found [here](https://uni-muenster.sciebo.de/s/XErqaLyqTgPbO7I).
+
 ## Reconstructions
+
+ 
 
 <img src="recons_for_20percent.gif" alt="recons_for_20percent" width="400" />
 <img src="recons_for_5percent.gif" alt="recons_for_5percent" width="400" />
